@@ -1,0 +1,130 @@
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+	position: fixed;
+	top: 50px;
+	background-color: #fefefe;
+	width: 50%;
+	-webkit-animation-name: slideIn;
+	-webkit-animation-duration: 0.4s;
+	animation-name: slideIn;
+	animation-duration: 0.4s;
+	left: 30%;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #14446a;
+  color: white;
+}
+
+.modal-header h2{
+  color: white !important;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+	padding: 12px 16px;
+	background-color: transparent;
+	color: white;
+	border-top: 1px solid #ccc;
+}
+
+
+.search-panel{
+	width: 100%;
+    margin-bottom: 15px;
+	/*display: flex;*/
+	justify-content: right;
+	margin-top: 15px;
+}
+
+.search-panel .form-row{
+	width: 50%;
+    text-align: right;
+}
+.search-panel .form-group{
+	display: inline-block;
+}
+
+/* For Loading Overlay by CodexWorld */
+.datalist-wrapper{
+	position: relative;
+}
+
+#dataContainer table {
+	width: 100%;
+	border: 1px solid #ccc;
+}
+
+#dataContainer table th, #dataContainer table td{
+	border-bottom: 1px solid #ccc;
+	padding: 5px 0px;
+}
+
+#dataContainer {
+	max-height: 350px;
+	overflow-y: scroll;
+}
+
+#dataContainer table thead th {
+	position: sticky;
+	top: 0;
+	background: #2271b1;
+	color: #fff;
+}
+.table.table-bordered.silo {
+	width: 100%;
+	border-collapse: collapse;
+  }
+  .table.table-bordered.silo th,
+  .table.table-bordered.silo td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+  }
+  .table.table-bordered.silo thead th {
+	background-color: #f2f2f2;
+  }
+  
+  .table.table-bordered.silo tbody tr:nth-child(even) {
+	background-color: #f9f9f9;
+  }
+
+  .post_variation_keyword {
+	width: 100%;
+	padding: 10px;
+  }
+
